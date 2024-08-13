@@ -1,0 +1,28 @@
+playable
+    - make it so you can only play your own moves
+    - make it so you can host & join a game room
+    - make it so that the game starts whenever the second player joins the game room
+
+bonus
+    - add a win screen and a play agan screen
+    - resync game button (hidden)
+    - rewrite the css
+    - undo first move of your turn, no verification needed
+    - have undo actually work!
+    - change reset to just have a "from server" function to not loop
+    - undo completely breaks the timer lmao
+
+- game options
+    - setup or **quickstart**
+    - time control
+    - silver/gold/**random**
+
+
+
+- freeplay mode (control both chars) // lobby
+- lobby mode (you are in a lobby and only control one char, or none!)
+
+
+- undo actually needs to send an undo request
+
+// file:///C:/Users/Pace/Workspace/BreakthruOnline/index.html

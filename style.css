@@ -1,0 +1,96 @@
+.center {
+    text-align: center;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.pronunciation {
+    text-align: center;
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+.gamerules {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 1%;
+    padding-right: 1%
+}
+
+
+.playermoves {
+    width: 45%;
+    height: 'auto';
+    padding: '10px';
+    box-sizing: 'border-box';
+}
+
+.movehistoryrow {
+    border-bottom: 1px solid black;
+    height: 40pt;
+    display: flex;
+}
+
+.interactionbox {
+    width: calc(100% / 3);
+    background-color: gold;
+    height: 'auto';
+    padding: '10px';
+    box-sizing: 'border-box';
+}
+
+.notleftmost {
+    border-left: 1px solid black;
+}
+
+.interactionrow {
+    position: absolute;
+    bottom: 0px;
+    margin: auto;
+    width: 100%;
+    border-top: 1px solid black;
+    height: auto;
+    display: flex;
+}
+
+
+.movehistorybox {
+    border-top: 1px solid black;
+    max-height: 70%;
+    overflow-y: auto;
+}
+
+.turnnumber {
+    width: 10%;
+    height: 'auto';
+    padding: '10px';
+    box-sizing: 'border-box';
+    font-size: 32pt;
+    border-right: 1px solid black;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 16pt
+}
+
+ol {
+    margin-top: 0;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}

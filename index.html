@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="gameBoard" width="0" height="0"></canvas>
+    <div id="infobox">
+        <h1 class="center"><em>Flóttaleikr</em>: A Tafl Game</h1>
+        <h3 class="pronunciation">[ˈflou̯t.taˌlei̯kr̩]</h3>
+        <div class="gamerules">
+            <h2>Rules</h2>
+            <em>Flóttaleikr</em> is an asymmetric escape game.
+            The inner player wins if they get their center pawn to the
+            edge of the board. The outer player wins if they capture the center pawn.</br></br>
+            On your turn you must do exactly one of the following:
+            <ol>
+                <li>Move any two of your pieces any number of tiles in a straight line.</li>
+                <li>Move the center piece once any number of tiles in a straight line.</li>
+                <li>Capture one tile diagonally with displacement.</li>
+            </ol>
+        </div>
+        <div class="center">
+            <button onclick="connectToRoom()">
+                <h2>Join Room</h2>
+            </button>
+            <br>
+            <button onclick="connectToRoom()">
+                <h2>Host room</h2>
+            </button>
+        </div>
+        <div class="invisible">
+            <h3>setup vs quickstart</h3>
+            <h3>time control</h3>
+            <h3>playerSelect</h3>
+            </br></br></br></br>
+            <h2>Chat here if I can be bothered to make one</h2>
+        </div>
+
+    </div>
+    <div class="center" id="movebox">
+        <h1>Move History</h1>
+        <div id="movehistorybox" class="movehistorybox"></div>
+        <div class="interactionrow">
+            <div class="interactionbox">
+                <button onclick="game.undo()">
+                    <h1>Undo</h1>
+                </button>
+            </div>
+            <div class="interactionbox notleftmost">
+                <button>
+                    <h1>Resign</h1>
+                </button>
+            </div>
+            <div class="interactionbox notleftmost">
+                <button onclick="game.restart()">
+                    <h1>Restart</h1>
+                </button>
+            </div>
+            <!-- Game end: Replaced with rematch and results -->
+        </div>
+        <button>
+
+    </div>
+
+
+    <script src="scripts/lib/easytimer.min.js"></script>
+    <script src="scripts/connect.js"></script>
+    <script src="scripts/gameclass.js"></script>
+    <script src="scripts/drawboard.js"></script>
+    <script src="scripts/movehistory.js"></script>
+
+</body>
+
+</html>
